@@ -1,21 +1,33 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react'
+import {
+  SafeAreaView,
+  StyleSheet,
+  StatusBar,
+  View,
+} from 'react-native'
+import { UploadImage } from './components/uploadImage'
 
-export default function App() {
+
+const App = () => {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+    <>
+      <StatusBar barStyle="dark-content" />
+      <SafeAreaView>
+        <View styles={styles.container}>
+          <UploadImage />
+        </View>
+      </SafeAreaView>
+    </>
+  )
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    flexGrow: 1,
+    flexDirection: 'column',
+    justifyContent: 'space-between',
   },
-});
+})
+
+
+export default App
