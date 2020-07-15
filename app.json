@@ -1,0 +1,12 @@
+{
+  "name": "image-upload-failure",
+  "displayName": "image-upload-failure",
+  "expo": {
+    "name": "image-upload-failure",
+    "slug": "image-upload-failure",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
